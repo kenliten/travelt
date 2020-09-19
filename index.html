@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a3a08bbca8.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header id="header">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Company Logo" id="header-img">
+      </div>
+      <button id="menu-op" class="nav-link"><i class="fas fa-bars"></i></button>
+      <nav id="nav-bar">
+        <a href="#intro" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#subscribe" class="nav-link">Subcribe</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <div id="intro">
+      <div id="intro-text">
+        <h2 id="intro-phrase">
+          Dare to live the experience!
+        </h2>
+        <a href="#contact" class="secondary-button">Contact Us</a>
+        <a href="#form" class="primary-button">Subscribe Now</a>
+      </div>
+    </div>
+    
+    <div id="about">
+      <h1 class="special-title">Travel Company</h1>
+      <div class="container">
+        <div class="col-4">
+          <h3 class="secondary-title">Let us choose your next destiny</h3>
+          <p class="v-centered">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus tempore placeat quis rem voluptate laudantium aperiam impedit velit, quae, dignissimos natus dolorem, quibusdam veniam voluptatem. Est quisquam nulla temporibus tenetur.
+          </p>
+        </div>
+        <div class="col-8">
+          <video src="./assets/overview.mp4" autoplay id="video"></video>
+        </div>
+      </div>
+    </div>
+        
+    <div id="subscribe">
+      <h2 class="secondary-title">Get our Free Guide</h2>
+      <div class="container">
+        <div class="col-4">
+          <p class="spaced">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, veritatis! Vitae labore, possimus eligendi.
+          </p>
+        </div>
+        <div class="col-8">
+          <form action="https://www.freecodecamp.com/email-submit" id="form" class="container spaced">
+            <div class="col-8">
+              <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="col-4">
+              <input type="submit" class="primary-button" value="Subscribe" id="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="overview">
+      <h2 class="secondary-title">Amazing places to explore</h2>
+      <p class="m-spaced">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium asperiores ullam atque quos sunt maxime excepturi porro temporibus iure quod deserunt dolor nihil ipsam placeat ea labore, consequuntur eum?
+      </p>
+      <div class="container">
+        <div class="col-4"><img src="./assets/thumb1.jpg" class="responsive-img" alt="Destiny 1"></div>
+        <div class="col-4"><img src="./assets/thumb3.jpg" class="responsive-img" alt="Destiny 3"></div>
+        <div class="col-4"><img src="./assets/thumb2.jpg" class="responsive-img" alt="Destiny 1"></div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2 class="secondary-title">Contact Us</h2>
+      <p class="spaced" style="text-align: center;">
+        <a class="social-link" href="mailto:support@travelt.com"><i class="fas fa-envelope"></i> support@travelt.com</a>
+        <a class="social-link" href="tel:+18008128585"><i class="fas fa-phone"></i> +1 800 812 8585</a>
+        <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="social-link" href="#"><i class="fab fa-github"></i></a>
+        <a class="social-link" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="social-link" href="#"><i class="fab fa-youtube"></i></a>
+      </p>
+    </div>
+
+    <footer>
+      <h2 class="footer-title">Landing Page by Kenliten</h2>
+      <p class="m-spaced light-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at, earum a non et provident alias itaque tempora repellat, culpa ab. Ipsa, quo earum perferendis non quos laborum illo laboriosam.
+      </p>
+      <p class="spaced light-text">
+        Check out all <a style="text-decoration: underline;" href="https://github.com/kenliten">kenliten</a> projects.
+      </p>
+    </footer>
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>

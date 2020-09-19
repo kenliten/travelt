@@ -1,0 +1,315 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a{
+    color: #F5F5F5;
+}
+
+#header{
+    display: flex;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #191919;
+    z-index: 100;
+}
+
+.logo{
+    flex: 1;
+}
+
+#header-img{
+    border-radius: 50%;
+    display: inline-block;
+    width: 64px;
+    height: auto;
+    vertical-align: middle;
+}
+
+#nav-bar{
+    flex: 5;
+    text-align: right;
+}
+
+.nav-link{
+    display: inline-block;
+    font-size: 16px;
+    padding: 24px;
+    line-height: 1;
+}
+
+.nav-link:hover{
+    background: #F5F5F5;
+    color: #424242;
+}
+
+#intro{
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/main-back.jpg') fixed no-repeat center;
+}
+
+#intro-text{
+    color: #fff;
+    font-size: larger;
+    left: 50%;
+    line-height: 1.5;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#intro-phrase{
+    display: block;
+    margin: 16px auto;
+    font-weight: bold;
+    font-size: 24pt;
+    color: #f5f5f5;
+    padding: 32px;
+    width: 80%;
+}
+
+.primary-button, .secondary-button{
+    color: #F5F5F5;
+    display: inline-block;
+    margin: 16px 4px;
+    padding: 16px 32px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.primary-button{
+    background-color: #48ACF0;
+}
+
+.primary-button:hover{
+    background-color: #1D99ED;
+}
+
+.secondary-button{
+    background-color: #191919;
+}
+
+#menu-op{
+    display: none;
+}
+
+.secondary-button:hover{
+    background-color: #424242;
+}
+
+#about{
+    text-align: center;
+}
+
+.special-title, .footer-title{
+    background-color: #F15025;
+    color: #F5F5F5;
+    padding: 16px;
+}
+
+.container{
+    display: flex;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+#video{
+    display: block;
+    max-width: 100%;
+}
+
+.secondary-title{
+    background-color: #191919;
+    color: #F5F5F5;
+    padding: 16px;
+}
+
+.v-centered{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spaced{
+    padding: 96px;
+}
+
+.m-spaced{
+    padding: 48px;
+}
+
+input[type=email]{
+    color: #191919;
+    background: #E0E0E0;
+    display: block;
+    padding: 16px 4px;
+    width: 100%;
+    margin: 16px 4px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.responsive-img{
+    opacity: .6;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.responsive-img:hover{
+    opacity: 1;
+}
+
+footer{
+    background: #191919;
+    height: 100vh;
+    padding-bottom: 4px;
+    padding-top: 64px;
+    text-align: center;
+}
+
+.footer-title{
+    background: #FFFFFF;
+    color: #191919;
+}
+
+.light-text{
+    color: #f5f5f5;
+}
+
+.social-link{
+    color: #191919;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 480px){
+
+    .logo{
+        display: none;
+    }
+
+    #header::before{
+        content: "TRAVELT";
+        display: block;
+        color: #f5f5f5;
+        font-size: 16px;
+        padding: 24px;
+        float: left;
+    }
+
+    *{
+        text-align: center !important;
+    }
+
+    .spaced{
+        padding: 24px 4px !important;
+        width: 100%;
+    }
+
+    .m-spaced{
+        padding: 12px 4px !important;
+        width: 100%;
+    }
+
+    [type=submit]{
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        display: block;
+    }
+
+    .v-centered{
+        padding: 16px;
+        position: initial;
+        transform: none;
+    }
+
+    .spaced{
+        padding: 48px;
+    }
+
+    .m-spaced{
+        padding: 24px;
+    }
+
+    .responsive-img{
+        opacity: 1;
+    }
+
+    .col-4, .col-6, .col-8{
+        display: block;
+        width: 100%;
+    }
+
+    #header{
+        display: block;
+    }
+
+    #header::after{
+        clear: both;
+    }
+
+    .logo{
+        float: left;
+    }
+
+    #menu-op{
+        background: #191919;
+        height: 64px;
+        color: #f5f5f5;
+        display: block;
+        float: right;
+    }
+
+    #menu-op:focus + #nav-bar{
+        display: block;
+    }
+
+    #menu-op:focus{
+        display: none;
+    }
+
+    #nav-bar{
+        margin-top: 64px;
+    }
+
+    #nav-bar > .nav-link{
+        background: #191919;
+        border-top: 1px solid #f5f5f5;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    #nav-bar{
+        display: none;
+    }
+}
